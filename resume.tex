@@ -189,6 +189,21 @@
 \vspace{-16pt}
 % adjust vscape based on the space you want to leave between each section.
 
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{ttfluence} $|$ \emph{Next.js, React 19, NestJS, gRPC, PostgreSQL, Terraform}}{Feb 2024 -- Present}
+        \resumeItemListStart
+          \resumeItem{Co-founder \& Lead Engineer of a creator-monetization platform connecting TikTok / Threads / Instagram creators with paid campaigns (Telegram mini-app + Refine admin + NestJS backend on PostgreSQL and Render); 1{,}273 personal commits (42\% of team output) across 9 production repositories over 27 months alongside two co-founder engineers.}
+          \resumeItem{Built the full stack end-to-end: a NestJS monorepo with one REST core and three gRPC microservices (Apify-based creator verification, Qiwi card payments, TikTok / Threads scraping), a Telegram mini-app frontend (Next.js + React 19 + Tailwind), a Refine + MUI admin dashboard, a 40+ model PostgreSQL schema with 65+ migrations, and Terraform IaC on Render as sole owner.}
+          \resumeItem{Owned production-critical workflows: Qiwi card payments with async status rechecks and idempotent refunds, Apify-driven creator verification with BullMQ async follower refresh, an audit + rollback framework with canRollback policy and pre-rollback cleanup hooks, and a 5-tier RBAC (Admin / Operator / Finance / Moderator / User) enforced authoritatively on the backend.}
+          \resumeItem{Drove the May 2026 platform consolidation: unified three standalone apps into a pnpm / Turborepo monorepo, scaffolded shared packages (api-types, eslint-config, design-tokens), and coordinated a major-version refresh across the stack (React 19, Next 16, NestJS 11, Tailwind 4, Prisma 6, TypeScript 6).}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -199,21 +214,6 @@
       \small{\textbf{Incomplete higher education}}
   \resumeSubHeadingListEnd
 \vspace{-18pt}
-
-
-%-----------PROJECTS-----------
-% \section{Projects}
-%     \vspace{-6pt}
-%     \resumeSubHeadingListStart
-%     \resumeProjectHeading
-%           {\textbf{NFT Marketplace} $|$ \emph{Next.js, TypeScript, Hardhat, Solidity \href{https://github.com/}{}}}{}
-%           \resumeItemListStart
-%             \resumeItem{Write about your project experience.}
-%             \resumeItem{Write about your project experience.}
-%           \resumeItemListEnd
-%           \vspace{-14pt}
-% \vspace{-3pt}
-
 
 
 \end{document}
