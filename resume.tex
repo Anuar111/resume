@@ -124,7 +124,7 @@
 
 % -----------Summary-----------
 \section{Summary}
-  \small{Full-stack engineer with 5+ years of experience building reliable, scalable backend systems with Node.js and NestJS, and shipping polished user interfaces with React, Next.js, and Angular. I focus on owning features end-to-end and continually look for opportunities to grow into deeper technical and product ownership.}
+  \small{Senior frontend engineer with 5+ years of experience. Currently architecting Bank CenterCredit's operational CRM platform -- a 19-app Nx monorepo used daily by the bank's call-center, sales, and back-office teams. Background spans full-stack Node.js / NestJS systems and Web3 product engineering. I own features end-to-end, lead codebase-wide migrations, and turn sprawling repositories into systems that ship.}
 \vspace{-12pt}
 % adjust vscape based on the space you want to leave between each section.
 
@@ -132,9 +132,9 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
-     \textbf{Languages}{: TypeScript, JavaScript, Go, PostgreSQL, MySQL, Solidity, Dart} \\
-     \textbf{Frameworks / Libraries / Technologies}{: Next.js, React, Angular, NestJS, Node.js, Zustand, Redux, Docker, Kubernetes, Firebase, Flutter, GCP, AWS, Bootstrap, Git} \\
-     \textbf{Tools}{: Jira, Postman, DBeaver, Firefoo}\\
+     \textbf{Languages}{: TypeScript, JavaScript, Go, Solidity, Dart, PostgreSQL, MySQL} \\
+     \textbf{Frameworks / Libraries}{: React, Next.js, Angular, NestJS, Node.js, Express, Redux Toolkit / RTK Query, react-hook-form, MUI} \\
+     \textbf{Tooling \& Infrastructure}{: Nx, Vite, Vitest, Playwright, Storybook, Module Federation, Docker, Kubernetes, GCP, AWS, Firebase, Sentry, Git}\\
 
     }}
  \end{itemize}
@@ -144,30 +144,38 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Sendnomad}{Apr 2023 -- Present}
+      {Bank CenterCredit (BCC)}{Sep 2023 -- Present}
+      {Senior Frontend Engineer}{Almaty}
+      \resumeItemListStart
+        \resumeItem{Senior frontend engineer on OCRM-front, the bank's operational CRM; ranked \#1 contributor to the active development branch over the last 24 months on a 19-app Nx monorepo of 3{,}600+ TS files; landed 161 merges to dev, master, pp, and redesign after code review.}
+        \resumeItem{Led the Feature-Sliced Design (FSD) monorepo migration -- scaffolded 15 of 19 domain apps and ran the cross-cutting refactor that moved entities, features, widgets, and pages out of a shared library into app-local layers; one migration commit alone touched 1{,}967 files.}
+        \resumeItem{Drove the codebase-wide React 19.2 upgrade end-to-end -- eliminated legacy forwardRef in a 44-file single-PR sweep, replaced ad-hoc context with useSyncExternalStore, added useTransition to heavy table sorts, and fixed effect-cleanup leaks across the app.}
+        \resumeItem{Cut the main JS bundle to 240 KB and made the chunk-size budget gzip-aware so it reflects real download cost; co-led the broader performance push that shaved another 500 KB via barrel-import elimination, bfcache support, lazy MUI date localization, and deferred analytics.}
+        \resumeItem{Rebuilt the Cisco Finesse telephony stack used by the bank's entire call-center -- from a flaky main-thread client into a Web Worker / SharedWorker architecture with XMPP-driven call entities, reconnect logic, and Sentry instrumentation -- then extracted it as a Module Federation microfrontend.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Sendnomad}{Apr 2023 -- Sep 2023}
       {Full-Stack Developer}{Almaty}
       \resumeItemListStart
-        \resumeItem{Built a new web application from the ground up in Next.js; authored and maintained Firebase Cloud Functions; supported the existing Flutter mobile app.}
-        \resumeItem{Owned and iterated on the core money-transfer user flow, and rewrote the internal admin panel from scratch in Next.js.}
-        \resumeItem{Ran A/B experiments, instrumented product analytics and user-event funnels, and raised the frontend test coverage bar.}
+        \resumeItem{Built the company's money-transfer web product from the ground up in Next.js while maintaining the existing Flutter mobile app; authored and maintained Firebase Cloud Functions powering both clients.}
+        \resumeItem{Rewrote the internal admin panel from scratch in Next.js and shipped A/B experiments backed by user-event funnels and product analytics, while raising the frontend test coverage bar.}
     \resumeItemListEnd
 
     \resumeSubheading
       {Tech Culture}{Oct 2022 -- Apr 2023}
       {Backend Developer}{Almaty}
       \resumeItemListStart
-        \resumeItem{Developed and maintained several blockchain products -- an NFT marketplace, a social network, staking apps, and an infrastructure blockchain SaaS -- using NestJS, Express, and Go.}
-        \resumeItem{Took part in the full delivery lifecycle, joined client calls, and deployed services to AWS and DigitalOcean using PM2 and nginx.}
-        \resumeItem{Solved a wide range of backend problems: Redis job queues, JWT cookie auth, cron-based DB-to-chain synchronization, gRPC microservices, WebSocket listeners reflecting on-chain events into the database, and unit testing.}
+        \resumeItem{Shipped multiple Web3 products -- an NFT marketplace, a social network, staking apps, and an infrastructure blockchain SaaS -- using NestJS, Express, and Go; deployed services to AWS and DigitalOcean with PM2 and nginx.}
+        \resumeItem{Owned diverse backend systems: Redis-backed job queues, JWT cookie auth, gRPC microservices, WebSocket listeners that reflected on-chain events into the database, and cron-based DB-to-chain reconciliation.}
     \resumeItemListEnd
 
     \resumeSubheading
       {Morre.io / METAFORRA}{Aug 2021 -- Oct 2022}
       {Full-Stack Developer}{Almaty}
       \resumeItemListStart
-        \resumeItem{Developed and maintained a crypto exchange with Express and Angular, including real-time prices and charts over WebSockets; also supported a marketplace for local clothing brands, including CSV report generation.}
-        \resumeItem{Led the blockchain engineering for METAFORRA, a Play2Earn game: drove architectural decisions, integrated blockchain on both backend and frontend, and authored, tested, and deployed multiple smart contracts.}
-        \resumeItem{Built simple CI/CD pipelines and developed DDD-style microservices with NestJS and RabbitMQ.}
+        \resumeItem{Built and operated a crypto exchange in Express and Angular, including real-time prices and candlestick charts over WebSockets; also maintained a marketplace for local clothing brands with CSV reporting.}
+        \resumeItem{Led blockchain engineering for METAFORRA, a Play2Earn game -- drove architectural decisions, authored, tested, and deployed multiple smart contracts, and built DDD-style microservices on NestJS with RabbitMQ.}
     \resumeItemListEnd
 
     \resumeSubheading
